@@ -1,0 +1,30 @@
+[workspace]
+members = ["crates/*"]
+resolver = "2"
+
+[workspace.package]
+name = "parser-bench"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.73"
+homepage = "https://docs.astral.sh/ruff"
+documentation = "https://docs.astral.sh/ruff"
+repository = "https://github.com/astral-sh/ruff"
+authors = ["Charlie Marsh <charlie.r.marsh@gmail.com>"]
+license = "MIT"
+
+[workspace.dependencies]
+bitflags = { version = "2.3.1" }
+is-macro = { version = "0.3.0" }
+itertools = { version = "0.11.0" }
+memchr = "2.6.3"
+once_cell = { version = "1.17.1" }
+rustc-hash = { version = "1.1.0" }
+smallvec = { version = "1.11.1" }
+anyhow = { version = "1.0.69" }
+unicode-ident = "1.0.12"
+serde = { version = "1.0.152", features = ["derive"] }
+serde_json = { version = "1.0.107" }
+schemars = { version = "0.8.15" }
+unicode_names2 = { version = "1.2.0" }
+insta = { version = "1.34.0"}
